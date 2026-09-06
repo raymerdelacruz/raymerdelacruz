@@ -3,69 +3,190 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Raymer de la Cruz | Portafolio Profesional</title>
+    <title>Raymer de la Cruz | Portafolio Interactivo</title>
+    <!-- Google Fonts & Font Awesome Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <header>
-        <div class="container">
+    <!-- Navegación Fija -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">&lt;Raymer/&gt;</a>
+            <ul class="nav-links">
+                <li><a href="#about">Sobre Mí</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#certs">Certificados</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header / Hero Section -->
+    <header class="hero">
+        <div class="hero-content reveal">
+            <div class="profile-badge">Disponible para oportunidades</div>
             <h1>Raymer de la Cruz</h1>
-            <p>Especialista Junior en Soporte Técnico | Redes | Ciberseguridad & SOC</p>
-            <div class="badges">
-                <span class="badge">CCNA 1</span>
-                <span class="badge">Linux Certified</span>
-                <span class="badge">ITLA Student</span>
+            <p class="subtitle">Especialista en Soporte Técnico | Redes | Ciberseguridad & SOC</p>
+            <p class="hero-desc">Estudiante de TI en el ITLA enfocado en administración de sistemas, análisis de tráfico y respuesta ante incidentes.</p>
+            <div class="hero-btns">
+                <a href="#certs" class="btn btn-primary"><i class="fa-solid fa-certificate"></i> Ver Certificaciones</a>
+                <a href="#contact" class="btn btn-secondary"><i class="fa-solid fa-envelope"></i> Contactar</a>
             </div>
         </div>
     </header>
 
     <main class="container">
 
-        <section class="card">
-            <h2>Sobre Mí</h2>
-            <p>Estudiante de IT y Ciberseguridad en el ITLA con experiencia en soporte técnico, administración de servidores Windows/Linux y análisis de seguridad operativa. Orientado a la resolución eficiente de problemas de red y monitoreo SOC.</p>
+        <!-- Sobre Mí -->
+        <section id="about" class="section reveal">
+            <h2 class="section-title"><i class="fa-solid fa-user-gear"></i> Sobre Mí</h2>
+            <div class="card">
+                <p>Estudiante apasionado por la infraestructura de redes y la seguridad informática en el <strong>Instituto Tecnológico de las Américas (ITLA)</strong>. Cuento con certificaciones oficiales de <strong>Cisco CCNA 1</strong> y <strong>Linux</strong>, con experiencia práctica en resolución de incidencias de soporte técnico, análisis de vulnerabilidades y configuración de servidores Windows/Linux.</p>
+            </div>
         </section>
 
-        <section class="card">
-            <h2>Habilidades Clave</h2>
+        <!-- Habilidades -->
+        <section id="skills" class="section reveal">
+            <h2 class="section-title"><i class="fa-solid fa-code"></i> Habilidades Técnicas</h2>
             <div class="skills-grid">
-                <div class="skill-item"><strong>Ciberseguridad:</strong> Wireshark, Snort, RED HAWK, Auditoría Web</div>
-                <div class="skill-item"><strong>Redes:</strong> Cisco Packet Tracer, VLSM, DHCP, Routing</div>
-                <div class="skill-item"><strong>Sistemas:</strong> Windows Server 2016, Active Directory, GPO, Linux CLI</div>
+                <div class="skill-card">
+                    <i class="fa-solid fa-shield-halved skill-icon"></i>
+                    <h3>Ciberseguridad & SOC</h3>
+                    <p>Wireshark, Snort, RED HAWK, WHOIS, Análisis de Vulnerabilidades Web, Inspección de Tráfico.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-solid fa-network-wired skill-icon"></i>
+                    <h3>Redes & Telecom</h3>
+                    <p>Cisco Packet Tracer, Subnetting VLSM, DHCP, Enrutamiento Estático, Firewalls.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-solid fa-server skill-icon"></i>
+                    <h3>Administración de Sistemas</h3>
+                    <p>Windows Server 2016 (Active Directory, GPO, Hyper-V, RRAS/VPN), Linux CLI (Bash Scripting).</p>
+                </div>
             </div>
         </section>
 
-        <section class="card">
-            <h2>Proyectos</h2>
+        <!-- Proyectos -->
+        <section id="projects" class="section reveal">
+            <h2 class="section-title"><i class="fa-solid fa-laptop-code"></i> Proyectos Destacados</h2>
+            <div class="projects-grid">
+                
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="tag">Ciberseguridad</span>
+                        <h3>Auditoría Web & Escaneo con RED HAWK</h3>
+                    </div>
+                    <p>Implementación y ejecución de scripts de seguridad en Kali/Ubuntu para reconocimiento activo/pasivo y detección de vulnerabilidades.</p>
+                    <div class="project-tech">
+                        <span>Linux</span><span>RED HAWK</span><span>WHOIS</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="tag">Redes</span>
+                        <h3>Topología Multisitio Cisco Packet Tracer</h3>
+                    </div>
+                    <p>Diseño y segmentación de subredes complejas utilizando VLSM, configuración de routers, switches y servicios DHCP estables.</p>
+                    <div class="project-tech">
+                        <span>Packet Tracer</span><span>VLSM</span><span>DHCP</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="tag">Sistemas</span>
+                        <h3>Infraestructura Windows Server 2016</h3>
+                    </div>
+                    <p>Despliegue de controlador de dominio Active Directory, políticas GPO, virtualización en Hyper-V y accesos VPN con RRAS.</p>
+                    <div class="project-tech">
+                        <span>Active Directory</span><span>Hyper-V</span><span>VPN</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Certificados con Botones Directos -->
+        <section id="certs" class="section reveal">
+            <h2 class="section-title"><i class="fa-solid fa-award"></i> Certificaciones & Logros</h2>
+            <p class="section-subtitle">Haz clic en los botones para visualizar o descargar directamente los certificados oficiales.</p>
             
-            <div class="project">
-                <h3>Escaneo de Vulnerabilidades Web</h3>
-                <p>Auditoría de seguridad y reconocimiento mediante herramientas CLI en Linux y scripts de análisis activo/pasivo.</p>
-            </div>
+            <div class="certs-grid">
+                
+                <!-- Tarjeta Certificado 1 -->
+                <div class="cert-card">
+                    <div class="cert-info">
+                        <i class="fa-solid fa-certificate cert-badge-icon"></i>
+                        <div>
+                            <h3>Cisco Certified Network Associate (CCNA 1)</h3>
+                            <p class="cert-issuer">Cisco Networking Academy</p>
+                        </div>
+                    </div>
+                    <div class="cert-actions">
+                        <!-- Reemplaza "docs/ccna1-cert.pdf" con la ruta de tu archivo en el repositorio -->
+                        <a href="docs/ccna1-cert.pdf" target="_blank" class="btn btn-sm btn-outline"><i class="fa-solid fa-eye"></i> Ver PDF</a>
+                        <a href="docs/ccna1-cert.pdf" download class="btn btn-sm btn-primary"><i class="fa-solid fa-download"></i> Descargar</a>
+                    </div>
+                </div>
 
-            <div class="project">
-                <h3>Topología de Red Multisitio</h3>
-                <p>Diseño e implementación de subredes con VLSM, enrutamiento estático y servidores DHCP en Cisco Packet Tracer.</p>
-            </div>
+                <!-- Tarjeta Certificado 2 -->
+                <div class="cert-card">
+                    <div class="cert-info">
+                        <i class="fa-solid fa-terminal cert-badge-icon"></i>
+                        <div>
+                            <h3>Administración e Instalación de Linux</h3>
+                            <p class="cert-issuer">Acreditación Técnica / Certificación CLI</p>
+                        </div>
+                    </div>
+                    <div class="cert-actions">
+                        <a href="docs/linux-cert.pdf" target="_blank" class="btn btn-sm btn-outline"><i class="fa-solid fa-eye"></i> Ver PDF</a>
+                        <a href="docs/linux-cert.pdf" download class="btn btn-sm btn-primary"><i class="fa-solid fa-download"></i> Descargar</a>
+                    </div>
+                </div>
 
-            <div class="project">
-                <h3>Servicios de Red en Windows Server</h3>
-                <p>Implementación de Active Directory, políticas GPO y servidor de acceso remoto VPN en entorno virtualizado.</p>
+                <!-- Tarjeta Certificado 3 -->
+                <div class="cert-card">
+                    <div class="cert-info">
+                        <i class="fa-solid fa-graduation-cap cert-badge-icon"></i>
+                        <div>
+                            <h3>Estudios de TI & Ciberseguridad</h3>
+                            <p class="cert-issuer">Instituto Tecnológico de las Américas (ITLA)</p>
+                        </div>
+                    </div>
+                    <div class="cert-actions">
+                        <a href="docs/itla-record.pdf" target="_blank" class="btn btn-sm btn-outline"><i class="fa-solid fa-file-invoice"></i> Record Académico</a>
+                    </div>
+                </div>
+
             </div>
         </section>
 
-        <section class="card">
-            <h2>Contacto</h2>
-            <p>¿Interesado en colaborar o contratarme?</p>
-            <a href="mailto:tu-email@ejemplo.com" class="btn">Enviar Correo</a>
+        <!-- Contacto -->
+        <section id="contact" class="section reveal">
+            <div class="card contact-card">
+                <h2><i class="fa-solid fa-paper-plane"></i> ¿Hablamos?</h2>
+                <p>Estoy disponible para posiciones de Soporte Técnico, Redes o SOC Analyst Jr.</p>
+                <div class="contact-buttons">
+                    <a href="mailto:tu-correo@ejemplo.com" class="btn btn-primary"><i class="fa-solid fa-envelope"></i> Enviar Correo</a>
+                    <a href="https://linkedin.com" target="_blank" class="btn btn-secondary"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://github.com/raymerdelacruz" target="_blank" class="btn btn-secondary"><i class="fa-brands fa-github"></i> GitHub</a>
+                </div>
+            </div>
         </section>
 
     </main>
 
     <footer>
-        <p>&copy; 2026 Raymer de la Cruz - Portafolio alojado en GitHub Pages</p>
+        <p>&copy; 2026 Raymer de la Cruz | Portafolio Interactivo</p>
     </footer>
 
+    <!-- Script de Interactividad y Animaciones Scroll -->
+    <script src="script.js"></script>
 </body>
 </html>
