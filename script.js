@@ -27,7 +27,7 @@ const COMMANDS = {
      '2. Topología multisitio en Packet Tracer',
      '3. Infraestructura Windows Server 2016'].join('\n'),
   contact: () =>
-    'Email: rdlc2901@gmail.com\nLinkedIn: /in/raymer-de-la-cruz-75b349392\nGitHub: github.com/raymerdelacruz'
+    'Email: rdlc2901@gmail.com\nLinkedIn: /in/raymer-de-la-cruz-75b349392\nGitHub: raymerdelacruz.github.io'
 };
 
 // ============ Boot sequence en el hero ============
